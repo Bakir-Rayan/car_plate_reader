@@ -3,7 +3,7 @@ import cv2
 from pytesseract import Output
 from function import *
 
-img = cv2.imread("plate5.jpg")
+img = cv2.imread("plate4.jpg")
 cv2.imshow('img', img)
 
 carplate_img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)

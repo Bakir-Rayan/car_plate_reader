@@ -1,6 +1,6 @@
 import cv2
-
-carplate_haar_cascade = cv2.CascadeClassifier("/home/ros/opencv_build/opencv/data/haarcascades/haarcascade_russian_plate_number.xml")
+carplate_haar_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_russian_plate_number.xml")
+#carplate_haar_cascade = cv2.CascadeClassifier(+"haarcascade_russian_plate_number.xml")
 class plate:
     def detect(image):
         carplate_overlay = image.copy() 
